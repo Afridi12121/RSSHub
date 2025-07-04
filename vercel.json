@@ -1,5 +1,11 @@
 {
-    "framework": null,
-    "github": { "silent": true },
-    "routes": [{ "src": "/.*", "dest": "/api/vercel.ts" }]
+  "version": 2,
+  "build": {
+    "env": {},
+    "installCommand": "npm install --no-optional",
+    "buildCommand":   "npm run build"
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "dist/index.js" }
+  ]
 }
